@@ -1,0 +1,12 @@
+# Redirect all to index.html for SPA.
+/* /index.html 200
+
+# These extra rules are required because HTTPS is not forced
+http://pip.jordanjanzen.com/* https://pip.jordanjanzen.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://fervent-williams-b3a5ad.netlify.com/* https://pip.jordanjanzen.com/:splat 301!
+http://fervent-williams-b3a5ad.netlify.com/* https://pip.jordanjanzen.com/:splat 301!
+
+# Page redirects
+/home / 301
