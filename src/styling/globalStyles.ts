@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import styledNormalize from 'styled-normalize';
 import Monofonto from './fonts/monofonto.ttf';
 import { screenSizes } from './style-utils';
 import { getTheme, loadTheme, palette } from './theme';
@@ -13,8 +12,6 @@ export const globalStyles = (theme: IPartialTheme) => {
   const { fonts, semanticColors } = globalTheme;
 
   return createGlobalStyle`
-    ${styledNormalize}
-
     @font-face {
       font-family: "Monofonto";
       src: url(${Monofonto});

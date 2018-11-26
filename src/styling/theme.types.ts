@@ -50,5 +50,4 @@ export interface ISemanticColors {
 
 export interface IFonts {
   fontFamily: string;
-  monospace: string;
 }
